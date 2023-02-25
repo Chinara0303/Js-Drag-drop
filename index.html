@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- form submit -->
+        <section>
+            <form action="">
+                <div class="my-3">
+                    <label for="input1">Username</label>
+                    <input type="text" id="input1" class="form-control w-50">
+                    <span class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-outline-primary">Submit</button>
+            </form>
+            <p></p>
+
+        </section>
+
+        <!-- drag-drop -->
+        <section id="drag">
+            <div class="drag-area mt-5">
+                <div class="item" id="drag-elem1" draggable="true"></div>
+                <div class="item" id="drag-elem2" draggable="true"></div>
+                <div class="item" id="drag-elem3" draggable="true"></div>
+                <div class="item" id="drag-elem4" draggable="true"></div>
+                <div class="item" id="drag-elem5" draggable="true"></div>
+                <div class="box" id="drop-elem"></div>
+            </div>
+        </section>
+
+
+        <!-- fileupload -->
+        <section id="upload">
+            <div class="file-upload-area">
+                <i class="fa-regular fa-file"></i>
+                <span>Drag files here to add them to table</span>
+                <div class="file-upload-icon">
+                    <a href="#">Or choose your file</a>
+                    <input type="file" class="d-none" multiple>
+                </div>
+            </div>
+        </section>
+        <table class="d-none table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Image name</th>
+                    <th scope="col">Image size</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://kit.fontawesome.com/5c10bc189f.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
